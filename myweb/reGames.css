@@ -1,0 +1,859 @@
+*{
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style: none;
+}
+
+body{
+	background-image: url("images/background.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;	
+}
+.clear{
+	clear:both;
+}
+
+[class*="col-"]{
+	float: left;
+	padding: 15px;
+	width: 100%;
+}
+@media only screen and (max-width: 600px){
+	.middlepanel{height:300px;}
+	#title li{width: 33%;}
+}
+
+@media only screen and (min-width: 600px){
+	.col-m-1 {width: 8.33%; }  /* 1칸 짜리 폭 */
+	.col-m-2 {width: 16.66%; }  /* 2칸 짜리 폭 */
+	.col-m-3 {width: 25%;}
+	.col-m-4 {width: 33.33%;}
+	.col-m-5 {width: 41.66%;}
+	.col-m-6 {width: 50%;}
+	.col-m-7 {width: 58.33%;}
+	.col-m-8 {width: 66.66%;}
+	.col-m-9 {width: 75%;}
+	.col-m-10 {width: 83.33%;}
+	.col-m-11 {width: 91.66%;}
+	.col-m-12 {width: 100%;}
+	.middlepanel{height: 300px;}
+}
+
+@media only screen and (min-width: 768px){
+	.col-1 {width: 8.33%; }  /* 1칸 짜리 폭 */
+	.col-2 {width: 16.66%; }  /* 2칸 짜리 폭 */
+	.col-3 {width: 25%;}
+	.col-4 {width: 33.33%;}
+	.col-5 {width: 41.66%;}
+	.col-6 {width: 50%;}
+	.col-7 {width: 58.33%;}
+	.col-8 {width: 66.66%;}
+	.col-9 {width: 75%;}
+	.col-10 {width: 83.33%;}
+	.col-11 {width: 91.66%;}
+	.col-12 {width: 100%;}
+	.middlepanel{height: 550px;}
+}
+
+
+#wrap{
+	float:none;
+	margin:auto;	
+}
+
+.loginbanner{
+	float: right;
+	margin: 20px 60px 0 0;
+	font-size:20px;
+	word-spacing: 5px;
+	padding: 20px;
+}
+
+.loginbanner a{
+	color:white;
+}
+
+#afterlogin{
+	display:none;
+}
+
+
+#title{
+	width:100%;
+	height: 100px;
+	background-color: #101010;
+	
+
+}
+
+#title ul{
+	list-style:none;
+	font-size:13px;
+	font-weight: 100;
+
+}
+
+#title ul li{
+	float:left;
+	margin:0 5px;
+	height: 100px;
+	padding: 20px;
+}
+
+#title li{
+	width: 15%;
+	border: 5px solid #505050;	
+	text-align: center;
+}
+
+#title a{
+	display:block;
+	padding:10px;
+	color: white;
+	font-size: 20px;
+}
+
+#title li:hover{
+	background-color: #252525;	
+}
+
+#title a:hover{
+	color: orange;
+}
+
+
+a{
+	color: black;
+	text-shadow: 0px 0px 2px #fff;
+}
+.subMenu{
+	display:none;
+	float:none;
+}
+
+div#mainImg{
+	float:left;
+	background-image: url(https://c.wallhere.com/photos/4b/34/1920x1080_px_armor_Dark_Souls_III_DLC_shield_sword_video_games_white-1327697.jpg!d);
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+div .gameStart{
+	height:100px;
+	width: 100%;
+	background-image: url("images/gamestart.png");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	z-index: 1;	
+	cursor: wait;
+}
+
+div .gameStart:hover{
+	background-image: url("images/gamestart-hover.png");
+	z-index: 1;
+}
+
+div .gamefire{
+	background-image: url("images/fire.jpg");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	opacity: 0.4;
+	height: 100px;
+	width: 100%;
+	z-index: 2;
+}
+
+div .godownload{
+	text-align: center;
+}
+
+div #loginjoin{
+	float:left;
+	background-color: whitesmoke;
+}
+
+div #keepLogin{
+	display: none;
+	float:left;
+	background-color: whitesmoke;
+}
+
+
+div #doLogin{
+	height: 50px;
+	width: 100%;
+	color: white;
+	font-size: 25px;
+	text-align: center;
+	cursor: pointer;
+	margin: 30px 0px 10px 0px;	
+	background-color: #2b305a;
+	line-height:50px;
+}
+
+
+
+.input_state{
+	margin-top:27px;
+	position:relative;
+	padding:10px 0 11px;
+	border-bottom:1px solid #dddfe4
+}
+
+.input_label{
+	color:#7b858e;
+	position:absolute;
+	bottom:3px;
+	left:0;
+	top:11px;
+	-webkit-transform-origin:bottom left;
+	transform-origin:bottom left;
+}
+.input_box,.input_label{
+	font-weight:400;
+	font-size:16px;
+	line-height:19px;
+	width:100%
+}
+.input_box{
+	position:relative;
+	z-index:10;
+	border:0;
+	padding:0;
+	background-color:transparent;
+	outline:0
+}
+.input_wrapper{
+	position:absolute;
+	right:0;
+	top:8px
+}
+
+.getvalue{
+	color:lightblue;
+	transform:scale(.75) translateY(-39px)
+}
+
+.userMenu{
+	padding:0px;
+	text-align: center;
+	margin: auto;
+}
+
+.userMenu li{
+	background-color: #2b305a;
+	float:left;
+	font-size: 15px;
+	padding:20px;
+	border: 1px solid black;
+	cursor: pointer;	
+	
+}
+
+.userMenu li a{
+	color: #fff;
+	font-size: 15px;
+	text-align: center;
+}
+
+#accountMenu{
+	margin: 40px 0px 0px 0px;
+}
+
+
+#accountMenu li{
+	margin: 0px 0px 0px -20px;
+	width:100%;
+}
+
+.userName{
+	color: #252525;
+	font-size: 25px;
+	text-align: center;
+	padding:10px;
+	text-shadow: 0px 0px 2px blue;	
+}
+
+#userCash{
+	width: 50%;
+	display: block;
+	float:left;
+	text-align: center;
+}
+
+#userMessage{
+	display: block;
+	width: 50%;
+	float:left;
+	text-align: center;
+}
+
+#mainclasstext{
+	text-align: left;
+	padding: 10px 5px;
+	margin: 0% 0% 0% 30%;
+	font-size: 40px;
+	color: #fff;
+	text-shadow: 0px 0px 4px #fff;
+}
+
+#classInfo{
+	height: 400px;	
+}
+
+#classInfo tr, td{
+	border-collapse: collapse;
+}
+
+#classInfo td{
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	height: 150px;
+	width: 150px;
+	text-align: center;
+	color: white;
+	cursor: pointer;
+	font-size:20px;
+}
+
+#class1{
+	background-image: url("images/swordman.jpg");
+	text-shadow: 0px 0px 4px purple;
+}
+#class2{
+	background-image: url("images/crusader.jpg");
+	text-shadow: 0px 0px 4px red;
+}
+#class3{
+	background-image: url("images/warrior.jpg");
+	text-shadow: 0px 0px 4px blue;
+}
+#class4{
+	background-image: url("images/ranger.jpg");
+	text-shadow: 0px 0px 4px green;
+}
+#class5{
+	background-image: url("images/rogue.jpg");
+	text-shadow: 0px 0px 4px darkgreen;
+}
+#class6{
+	background-image: url("images/priest.jpg");
+	text-shadow: 0px 0px 4px brown;
+}
+#class7{
+	background-image: url("images/berserker.jpg");
+	text-shadow: 0px 0px 4px red;
+}
+#class8{
+	background-image: url("images/magician.jpg");
+	text-shadow: 0px 0px 4px blue;
+}
+#class9{
+	background-image: url("images/fighter.jpg");
+	text-shadow: 0px 0px 4px orange;
+}
+#class10{
+	background-image: url("images/summoner.jpg");
+	text-shadow: 0px 0px 4px brown;
+}
+#class11{
+	background-image: url("images/necromancer.jpg");
+	text-shadow: 0px 0px 4px purple;
+}
+#class12{
+	background-image: url("images/magicfencer.jpg");
+	text-shadow: 0px 0px 4px purple;
+}
+
+#eventPost{
+	margin: -50px 0px 0px 0px;
+	text-shadow: 0px 0px 4px #fff;
+	text-align: center;
+	vertical-align: middle;
+	color: #fff;
+	font-size: 34px;
+}
+
+#eventimg{
+	height: 450px;
+	background-image: url("images/event.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	cursor: pointer;
+}
+
+footer{	
+	
+	position: relative;
+	width: 100%;
+	padding-bottom: 80px;
+	background-color: #1e2128;
+	text-align: center;
+}
+
+
+
+.snsArea{
+	height: 135px;
+	padding: 30px 0px 0px 0px;
+	background-color: #30343e;
+	color: #2b2b2b;
+}
+
+#facebook ,#youtube, #twitch{
+	position: relative;
+	display: inline-block;
+	width: 75px;
+	height: 75px;
+	margin: 0 20px;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	border-radius: 50%;
+	cursor: pointer;
+	text-align:center;
+	vertical-align: middle;
+	font-size: 40px;
+	line-height: 75px;
+	color:  rgba(255, 255, 255, 0.2);	
+}
+
+#facebook:hover, #youtube:hover, #twitch:hover{
+	background-color: rgba(255, 255, 255, 0.2);
+	color: #30343e;
+}
+
+
+.innerFooter{
+	padding: 60px 0px 0px;
+}
+
+.termList p{
+	color: #d5d4d4;
+	display: inline-block;
+	position: relative;
+	padding: 0 24px;
+	font-size: 14px;
+	text-decoration: none;
+	cursor: pointer;
+	margin: 0;
+	vertical-align: top;
+	text-align: center;
+
+}
+
+
+address{
+	color:#7f7e7e;
+	display: block;
+	position: relative;
+	padding:0 20px;
+	font-size:13px;
+	line-height: 1.76;
+	text-align: center;
+	font-style: normal;
+	font-family: sans-serif;
+}
+
+address span{
+	padding: 0 20px;
+}
+
+.footer-wrap{
+	display: inline-block;
+	content:"";
+	position: relative;
+	left: 0;
+	top: 50%;
+	margin-top: -5px;
+	width: 1px;
+	height: 11px;
+	background-color: #727373;
+	font-family: sans-serif;
+}
+
+.box-game-info{
+	margin-top: 30px;
+	text-align: center;	
+}
+
+.left-area{
+	margin: 20px 0 0 0;
+	display: inline-block;
+	width:186px;
+	height:66px;
+	background-image: url("images/footer_gameinfo_spr.jpg");
+	background-repeat: no-repeat;
+	background-size:  100% 100%;
+}
+
+.right-area{
+	display: inline-block;
+	vertical-align: middle;
+	margin: -53px 0px 0px 0px;
+	padding:0;
+	background-color: #472328;
+	color: #c5afb2;
+	font-size: 10px;
+	font-family: sans-serif;
+}
+
+.right-area table, tr, td{
+	border-collapse: collapse;
+	border:1px solid #2b2b2b;
+}
+
+article{
+	text-align: center;
+}
+
+#joinHeader{
+	height: 100px;
+	width: 100%;
+	background-color: #cc3300;
+	line-height: 50px;
+}
+
+#headerFirst{
+	color: white;
+}
+
+#headerSecond, #headerThird{
+	color: #898989;
+}
+
+#joinHeader li{
+	float:left;
+	padding: 20px;	
+}
+
+
+
+.agreeBoxes{
+	display: inline-block;
+	background-color: #f6f6f6;
+	margin: auto;
+	text-align: left;
+	padding: 20px;
+}
+
+#agreeHead{	
+	font-size: 23px;
+}
+
+.makered{
+	color: red;
+}
+
+.agreeTitle{
+	margin: 50px 0px 0px 100px;
+	font-size: 20px;
+}
+
+.policy{
+	display:block;
+	overflow-y: scroll;
+	padding-left:10px;
+	width: 768px;
+	height: 200px;
+	border: 1px solid #d1d1d1;
+	line-height: 18px;
+	margin: auto;
+	padding: 0px;
+	text-align: left;
+	font-size: 0.9em;
+	color: #6f6f6f;
+}
+
+.checkbox{
+	margin: 0px 0px 60px 100px;
+	color: #cecece;
+	opacity: 0.9;
+}
+
+.agreeCheck{
+	text-align: center;
+	margin: 0px 0px 100px 0px;
+}
+
+.agreeCheck div{
+	display: inline-block;
+	width: 111px;
+	height: 50px;	
+	line-height: 50px;
+	margin: 10px;
+	
+}
+
+#agreeconfirm, #inputconfirm{
+	background-color: #cc3300;
+	color: white;
+}
+
+#agreecancel, #inputcancel{
+	background-color: white;
+	color: black;
+}
+
+.joinInfo{
+	width:80%;
+	text-align: center;
+	background-color: #f6f6f6;
+	display:none;
+}
+
+#joinText{
+	font-size: 25px;
+	text-shadow: 0px 0px 2px black;
+}
+
+#joinInput{
+	width: 30%;
+	display: inline-block;
+}
+
+#joinInput ul{
+	padding-inline-start: 0px;
+}
+
+#joinInput li{
+	margin: 40px 0px 30px 0px;
+}
+
+.joinsuccess{
+	display:none;
+	width: 80%;
+	height: 700px;
+	text-align: center;
+	background-color: white;
+}
+
+#welcomeimg{
+	display:inline-block;
+	background-image: url("images/welcome.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	width: 1024px;
+	height: 438px;
+	margin: 20px 0px 0px 10px;
+}
+
+#welcomeJoin{
+	font-size: 30px;
+	text-shadow: 0px 0px 1px red;
+}
+
+#gohome{
+	width: 150px;
+	height: 70px;
+	background-color: #cc3300;	
+	line-height: 70px;
+	text-align: center;
+	display: inline-block;
+	margin: 30px 0px 0px 0px;
+}
+
+#gohome a{
+	color: white;
+}
+
+#classSelect{
+	height: 450px;
+	width: 100%;
+}
+
+#classSelect li{
+	height:	380px;
+	background-repeat: no-repeat;
+	background-size: contain;
+	cursor: pointer;
+}
+
+#swordsman{
+	background-image: url("https://s1.pearlcdn.com/KR/contents/img/portal/gameinfo/original_character_21_symbol.png");	
+}
+
+#crusader{
+	background-image: url("https://s1.pearlcdn.com/KR/contents/img/portal/gameinfo/original_character_24_symbol.png");
+}
+
+#warrior{
+	background-image: url("https://s1.pearlcdn.com/KR/contents/img/portal/gameinfo/original_character_0_symbol.png");
+}
+
+#ranger{
+	background-image: url("https://s1.pearlcdn.com/KR/contents/img/portal/gameinfo/original_character_4_symbol.png");
+}
+
+#rogue{
+	background-image: url("https://s1.pearlcdn.com/KR/contents/img/portal/gameinfo/original_character_26_symbol.png");
+}
+
+#priest{
+	background-image: url("https://s1.pearlcdn.com/KR/contents/img/portal/gameinfo/original_character_17_symbol.png");
+}
+
+#berserker{
+	background-image: url("https://s1.pearlcdn.com/KR/contents/img/portal/gameinfo/original_character_12_symbol.png");
+}
+
+#magician{
+	background-image: url("https://s1.pearlcdn.com/KR/contents/img/portal/gameinfo/original_character_28_symbol.png");
+}
+
+#fighter{
+	background-image: url("https://s1.pearlcdn.com/KR/contents/img/portal/gameinfo/original_character_19_symbol.png");
+}
+
+#summoner{
+	background-image: url("https://s1.pearlcdn.com/KR/contents/img/portal/gameinfo/original_character_16_symbol.png");
+}
+
+#necromancer{
+	background-image: url("https://s1.pearlcdn.com/KR/contents/img/portal/gameinfo/original_character_8_symbol.png");
+}
+
+#magicfencer{
+	background-image: url("https://s1.pearlcdn.com/KR/contents/img/portal/gameinfo/original_character_27_symbol.png");
+}
+
+#classInfomation{
+	width: 100%;
+	height: 1000px;
+}
+
+#classimg{
+	width: 100%;
+	height:640px;
+}
+
+
+#classimg li{
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	height: 640px;
+}
+
+#sworsmanImg{
+	background-image: url("https://s1.pearlcdn.com/KR/contents/img/portal/gameinfo/awakening_character_26_char.jpg");
+}
+
+.sworsmanInfo{
+	display: inline-block;
+}
+
+#crusaderImg{
+	background-image: url("https://s1.pearlcdn.com/KR/contents/img/portal/gameinfo/character_24_top_effect.jpg");
+}
+
+.crusaderInfo{
+	display: none;
+}
+
+#warriorImg{
+	background-image: url("https://s1.pearlcdn.com/KR/contents/img/portal/gameinfo/character_0_top_effect.jpg");
+}
+
+.warriorInfo{
+	display: none;
+}
+
+#rangerImg{
+	background-image: url("https://s1.pearlcdn.com/KR/contents/img/portal/gameinfo/character_4_top_effect.jpg");
+}
+
+.rangerInfo{
+	display: none;	
+}
+
+#rogueImg{
+	background-image: url("https://s1.pearlcdn.com/KR/contents/img/portal/gameinfo/character_25_top_effect.jpg");
+}
+
+.rogueInfo{
+	display: none;
+}
+
+#priestImg{
+	background-image: url("https://s1.pearlcdn.com/KR/contents/img/portal/gameinfo/character_31_top_effect.jpg");
+}
+
+.priestInfo{
+	display: none;
+}
+
+#berserkerImg{
+	background-image: url("https://s1.pearlcdn.com/KR/contents/img/portal/gameinfo/character_12_top_effect.jpg");
+}
+
+.berserkerInfo{
+	display: none;
+}
+
+#magicianImg{
+	background-image: url("https://s1.pearlcdn.com/KR/contents/img/portal/gameinfo/original_character_28_char.jpg");
+}
+
+.magicianInfo{
+	display: none;
+}
+
+#fighterImg{
+	background-image: url("https://s1.pearlcdn.com/KR/contents/img/portal/gameinfo/character_19_top_effect.jpg");
+}
+
+.fighterInfo{
+	display: none;
+}
+
+#summonerImg{
+	background-image: url("https://s1.pearlcdn.com/KR/contents/img/portal/gameinfo/character_16_top_effect.jpg");
+}
+
+.summonerInfo{
+	display: none;
+}
+
+#necromancerImg{
+	background-image: url("https://s1.pearlcdn.com/KR/contents/img/portal/gameinfo/character_8_top_effect.jpg");
+}
+
+.necromancerInfo{
+	display: none;
+}
+
+#magicfencerImg{
+	background-image: url("https://s1.pearlcdn.com/KR/contents/img/portal/gameinfo/character_27_top_effect.jpg");
+}
+
+.magicfencerInfo{
+	display: none;
+}
+
+#classtext{
+	width: 100%;
+	height: 360px;
+	background-color: #212227;
+}
+
+.classname{
+	float:left;
+	font-size: 60px;
+	font-family: 'Nanum Pen Script', cursive;
+	color: white;
+	text-shadow: 0px 0px 4px red;
+}
+
+.classstatus{
+	float:right;
+	margin: 10px 10px;
+	width:300px;
+	height:300px;
+}
+
+.classhistory{
+	margin: 100px 20px;
+	font-size:20px;
+	color: white;
+	text-shadow: 0px 0px 4px black;
+}
+
+
